@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://gabiz:root@apicluster.xiwf2.mongodb.net/web3-trab?retryWrites=true&w=majority');
 //Confirmar conexão
 mongoose.connection.on('connected', function () {
-    console.log('Connected to Database ' + 'test');
+    console.log('Connected to Database');
 });
 // Mensagem de Erro
 mongoose.connection.on('error', (err) => {
